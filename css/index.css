@@ -286,19 +286,19 @@ footer nav a {
 }
 
 .grid {
-  height: 450px;
-  margin: 2% 0;
+  height: 50%;
+  margin: 3% 0;
   width: 40%;
   border-bottom: 2px solid #ff4b00;
 }
 
 .about-top {
   border-bottom: 2px solid #ff4b00;
-  padding: 3rem 0;
+  padding: 4rem 0;
 }
 
 .about-bottom {
-  padding: 2.5rem 0;
+  padding: 3rem 0;
 }
 /*Responsive Styles*/
 
