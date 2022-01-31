@@ -226,6 +226,7 @@ nav {
 }
 /*Bottom Section Styles*/
 .bottom-content {
+  max-width: 100%;
   display: flex;
   justify-content: space-between;
 }
@@ -333,5 +334,15 @@ header .about-img {
     flex-direction: column;
   }
 
-  
+  .bottom-content{
+    max-width: 100%;
+    flex-direction: column;
+  }
+
+  .bottom-content .text-container{
+    width: 100%;
+    text-align: center;
+  }
+
+
 }
