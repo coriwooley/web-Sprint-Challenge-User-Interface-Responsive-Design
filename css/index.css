@@ -131,15 +131,20 @@ nav {
 }
 
 .header1 {
+  height: 32.5vh;
   display: flex;
-  flex-wrap: wrap;
+  align-content: center;
+}
+
+/* .header1 {
+  display: flex;
   justify-content: center;
   align-items: center;
   height: 27vh;
   background-image: url(/img/jumbo.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-}
+} */
 
 /*Top Section Styles*/
 
@@ -320,10 +325,7 @@ header .about-img {
     width: 60%;
   }
 
-  .header{
-    height: 27vh;
-    
-  }
+ header{}
 
   .middle-content .boxes .box {
     width: 47%;
