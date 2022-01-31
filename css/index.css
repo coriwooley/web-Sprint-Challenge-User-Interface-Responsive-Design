@@ -301,11 +301,7 @@ footer nav a {
 
 @media (max-width: 500px){
 
-  body {
-    color: red;
-  }
-
-
+ 
   nav {
     align-items: center;
     flex-direction: column;
