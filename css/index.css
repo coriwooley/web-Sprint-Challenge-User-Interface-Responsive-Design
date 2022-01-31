@@ -323,4 +323,8 @@ header .about-img {
    max-width: 50%;
    
   }
+
+  .grid{
+    width: 100%;
+  }
 }
