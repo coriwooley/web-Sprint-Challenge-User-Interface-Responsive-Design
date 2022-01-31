@@ -288,6 +288,7 @@ footer nav a {
 .grid {
   height: 50%;
   margin: 3% 0;
+  padding-bottom: 2rem;
   width: 40%;
   border-bottom: 2px solid #ff4b00;
 }
