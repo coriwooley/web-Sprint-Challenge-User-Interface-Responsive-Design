@@ -128,6 +128,11 @@ nav {
   justify-content: space-evenly;
   align-items: center;
   padding-top: 1.5rem;
+  font-size: 2rem;
+}
+
+.links a{
+  padding: 3px;
 }
 
 .header1 {
@@ -137,15 +142,6 @@ nav {
   justify-content: center;
 }
 
-/* .header1 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 27vh;
-  background-image: url(/img/jumbo.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-} */
 
 /*Top Section Styles*/
 
@@ -316,16 +312,21 @@ footer nav a {
     padding-top: 3rem;
   }
 
+  .links {
+    width: auto;
+  }
 
   .logo {
     width: 60%;
   }
 
  .header1, .about-img{
-   height: 12vh;
+   /* height: 13vh; */
+   height: auto;
    display: flex;
    align-content: space-around;
    justify-content: center;
+   padding: 1rem;
 
  }
 
