@@ -68,6 +68,11 @@ h6 {
   isolation: isolate;
 }
 
+
+
+
+
+
 * {
   box-sizing: border-box;
 }
@@ -104,12 +109,13 @@ a {
   color: black;
 }
 
-p{
+p {
   font-size: 2rem;
 }
 /*Nav Styles*/
 
 nav {
+  width: 100%;
   display: flex;
   justify-content: flex-start;
   flex-direction: row;
@@ -123,15 +129,16 @@ nav {
 }
 
 .links {
-  width: 100%;
+  width: 80%;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  align-content: stretch;
   padding-top: 1.5rem;
   font-size: 2rem;
 }
 
-.links a{
+.links a {
   padding: 3px;
 }
 
@@ -141,7 +148,6 @@ nav {
   align-content: space-around;
   justify-content: center;
 }
-
 
 /*Top Section Styles*/
 
@@ -188,8 +194,6 @@ nav {
   height: 25vh;
   font-size: 2.5rem;
 }
-
-
 
 .box1 {
   background-color: teal;
@@ -270,7 +274,6 @@ footer nav a {
   justify-content: center;
 }
 
-
 .thumbnails {
   display: flex;
   flex-wrap: wrap;
@@ -299,9 +302,7 @@ footer nav a {
 }
 /*Responsive Styles*/
 
-@media (max-width: 500px){
-
- 
+@media (max-width: 500px) {
   nav {
     align-items: center;
     flex-direction: column;
@@ -310,48 +311,47 @@ footer nav a {
 
   .links {
     width: auto;
+    justify-content: space-around;
   }
 
   .logo {
     width: 60%;
   }
 
- .header1, .about-img{
-   /* height: 13vh; */
-   height: auto;
-   display: flex;
-   align-content: space-around;
-   justify-content: center;
-   padding: 1rem;
-
- }
+  .header1,
+  .about-img {
+    /* height: 13vh; */
+    height: auto;
+    display: flex;
+    align-content: space-around;
+    justify-content: center;
+    padding: 1rem;
+  }
 
   .middle-content .boxes .box {
     width: 47%;
     height: 22vh;
   }
 
-  .middle-content h2{
+  .middle-content h2 {
     text-align: center;
   }
 
-  .grid{
+  .grid {
     width: 100%;
   }
 
-
-  .top-content .text-container{
+  .top-content .text-container {
     width: 100%;
     flex-direction: column;
   }
-  
 
-  .bottom-content{
+  .bottom-content {
     max-width: 100%;
     flex-direction: column;
   }
 
-  .bottom-content .text-container{
+  .bottom-content .text-container {
     width: 100%;
     text-align: center;
   }
@@ -367,5 +367,4 @@ footer nav a {
   .about-bottom h2 {
     text-align: center;
   }
-
 }
