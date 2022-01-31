@@ -330,6 +330,10 @@ header .about-img {
     height: 22vh;
   }
 
+  .middle-content h2{
+    text-align: center;
+  }
+
   .grid{
     width: 100%;
   }
