@@ -147,7 +147,6 @@ nav {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-bottom: 4%;
   border-bottom: 2px solid #ff4b00;
   text-align: justify;
 }
@@ -168,7 +167,7 @@ nav {
 }
 
 .middle-content h2 {
-  margin-bottom: 0;
+  margin-bottom: 2rem;
 }
 
 .middle-content .boxes {
@@ -178,13 +177,14 @@ nav {
 }
 
 .middle-content .boxes .box {
-  margin: 4% 0;
+  margin: 2.5% 0;
   color: white;
   display: flex;
   align-items: center;
   justify-content: center;
   width: 17%;
-  height: 27vh;
+  height: 25vh;
+  font-size: 2.5rem;
 }
 
 
@@ -326,8 +326,8 @@ header .about-img {
   }
 
   .middle-content .boxes .box {
-   max-width: 50%;
-   
+    width: 47%;
+    height: 22vh;
   }
 
   .grid{
