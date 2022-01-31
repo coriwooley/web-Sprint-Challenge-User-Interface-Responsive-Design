@@ -123,11 +123,11 @@ nav {
 }
 
 .links {
-  width: 80%;
+  width: 100%;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  font-size: 2rem;
+  padding-top: 1.5rem;
 }
 
 .header1 {
@@ -266,14 +266,14 @@ footer nav {
 footer nav a {
   color: white;
 }
-/*About Page Styles*/
 
-header .about-img {
-  height: 27vh;
-  background-image: url(/img/jumbo-about.png);
-  background-repeat: no-repeat;
-  background-size: cover;
+.about-img {
+  height: 32.5vh;
+  display: flex;
+  align-content: space-around;
+  justify-content: center;
 }
+
 
 .thumbnails {
   display: flex;
@@ -309,9 +309,6 @@ header .about-img {
     color: red;
   }
 
-  /* .container{
-    flex-direction: column;
-  } */
 
   nav {
     align-items: center;
@@ -319,19 +316,12 @@ header .about-img {
     padding-top: 3rem;
   }
 
-  .links {
-    width: 100%;
-    padding-top: 1.5rem;
-    width: 100%;
-    font-size: 2rem;
-    justify-content:space-around;
-  }
 
   .logo {
     width: 60%;
   }
 
- .header1{
+ .header1, .about-img{
    height: 12vh;
    display: flex;
    align-content: space-around;
