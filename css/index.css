@@ -103,6 +103,10 @@ a {
   text-decoration: none;
   color: black;
 }
+
+p{
+  font-size: 2rem;
+}
 /*Nav Styles*/
 
 nav {
@@ -273,6 +277,7 @@ header .about-img {
 
 .grid img {
   width: 100%;
+  margin-top: 2rem;
 }
 
 .grid {
@@ -288,7 +293,7 @@ header .about-img {
 }
 
 .about-bottom {
-  padding: 3rem 0;
+  padding: 2.5rem 0;
 }
 /*Responsive Styles*/
 
