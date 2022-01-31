@@ -133,7 +133,8 @@ nav {
 .header1 {
   height: 32.5vh;
   display: flex;
-  align-content: center;
+  align-content: space-around;
+  justify-content: center;
 }
 
 /* .header1 {
@@ -315,17 +316,28 @@ header .about-img {
   nav {
     align-items: center;
     flex-direction: column;
+    padding-top: 3rem;
   }
 
   .links {
     width: 100%;
+    padding-top: 1.5rem;
+    width: 100%;
+    font-size: 2rem;
+    justify-content:space-around;
   }
 
   .logo {
     width: 60%;
   }
 
- header{}
+ .header1{
+   height: 12vh;
+   display: flex;
+   align-content: space-around;
+   justify-content: center;
+
+ }
 
   .middle-content .boxes .box {
     width: 47%;
