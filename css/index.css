@@ -1,140 +1,371 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
+/*
+  1. Use a more-intuitive box-sizing model.
 */
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+/*
+    2. Remove default margin
+  */
+* {
+  margin: 0;
 }
+/*
+    3. Allow percentage-based heights in the application
+  */
+html,
 body {
-	line-height: 1;
+  height: 100%;
 }
-ol, ul {
-	list-style: none;
+/*
+    Typographic tweaks!
+    4. Add accessible line-height
+    5. Improve text rendering
+  */
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
 }
-blockquote, q {
-	quotes: none;
+/*
+    6. Improve media defaults
+  */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+/*
+    7. Remove built-in form typography styles
+  */
+input,
+button,
+textarea,
+select {
+  font: inherit;
 }
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
+/*
+    8. Avoid text overflows
+  */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
 }
+/*
+    9. Create a root stacking context
+  */
+#root,
+#__next {
+  isolation: isolate;
+}
+
+
+
+
+
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-html{
-    font-size:62.5%;
+html {
+  font-size: 62.5%;
 }
 body {
-    font-family: 'Roboto', sans-serif;
-    line-height:1.5;
-    font-size:1.6rem;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.5;
+  font-size: 1.6rem;
 }
 
-h1, h2, h3, h4, h5 {
-    font-size: 2.5rem;
-    margin-bottom: 2%;
-    font-family: 'Rubik', sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-size: 2.5rem;
+  margin-bottom: 2%;
+  font-family: "Rubik", sans-serif;
 }
-section, footer{
-    padding:4% 0;
+section,
+footer {
+  padding: 4% 0;
 }
 .container {
-    width: 80%;
-    margin: 0 auto;
+  width: 80%;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+p {
+  font-size: 2rem;
+}
+/*Nav Styles*/
+
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  padding-top: 1%;
+  padding-bottom: 4%;
+}
+
+.logo {
+  width: 25%;
+  display: flex;
+}
+
+.links {
+  width: 80%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: stretch;
+  padding-top: 1.5rem;
+  font-size: 2rem;
+}
+
+.links a {
+  padding: 3px;
+}
+
+.header1 {
+  height: 32.5vh;
+  display: flex;
+  align-content: space-around;
+  justify-content: center;
 }
 
 /*Top Section Styles*/
 
 .top-content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-bottom: 4%;
-    border-bottom: 2px solid #ff4b00;
-    text-align: justify;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border-bottom: 2px solid #ff4b00;
+  text-align: justify;
 }
 
 .top-content .text-container {
-    width: 35%;
-    padding: 0 1%;
-    padding-bottom: 4%;  
+  width: 50%;
+  padding: 5% 1%;
+}
+
+.top-content h2 {
+  text-align: center;
 }
 
 /*Middle Section Styles*/
 .middle-content {
-    margin-bottom: 4%;
+  margin-bottom: 4%;
+  border-bottom: 2px solid #ff4b00;
 }
 
 .middle-content h2 {
-    margin-bottom: 0;
+  margin-bottom: 2rem;
 }
 
 .middle-content .boxes {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .middle-content .boxes .box {
-    background: black;
-    margin: 4% 0;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  margin: 2.5% 0;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 17%;
+  height: 25vh;
+  font-size: 2.5rem;
 }
 
+.box1 {
+  background-color: teal;
+}
+
+.box2 {
+  background-color: gold;
+}
+
+.box3 {
+  background-color: cadetblue;
+}
+
+.box4 {
+  background-color: coral;
+}
+
+.box5 {
+  background-color: crimson;
+}
+
+.box6 {
+  background-color: forestgreen;
+}
+
+.box7 {
+  background-color: darkorchid;
+}
+
+.box8 {
+  background-color: hotpink;
+}
+
+.box9 {
+  background-color: indigo;
+}
+
+.box10 {
+  background-color: dodgerblue;
+}
 /*Bottom Section Styles*/
 .bottom-content {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .bottom-content .text-container {
-    width:25%;
+  width: 25%;
 }
 
 .bottom-content .text-container:last-child {
-    padding-right: 0;
+  padding-right: 0;
 }
 
 /*Footer Styles*/
+
 footer {
-    width: 100%;
-    background-color: #ff4b00;
+  background-color: #ff4b00;
+  max-width: 100%;
 }
 
-/*About Page Styles*/
+footer nav {
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 2.5rem;
+  text-align: center;
+}
 
+footer nav a {
+  color: white;
+}
 
+.about-img {
+  height: 32.5vh;
+  display: flex;
+  align-content: space-around;
+  justify-content: center;
+}
+
+.thumbnails {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.grid img {
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.grid {
+  height: 50%;
+  margin: 3% 0;
+  padding-bottom: 2rem;
+  width: 40%;
+  border-bottom: 2px solid #ff4b00;
+}
+
+.about-top {
+  border-bottom: 2px solid #ff4b00;
+  padding: 4rem 0;
+}
+
+.about-bottom {
+  padding: 3rem 0;
+}
 /*Responsive Styles*/
+
+@media (max-width: 500px) {
+  nav {
+    align-items: center;
+    flex-direction: column;
+    padding-top: 3rem;
+  }
+
+  .links {
+    width: auto;
+    justify-content: space-around;
+  }
+
+  .logo {
+    width: 60%;
+  }
+
+  .header1,
+  .about-img {
+    /* height: 13vh; */
+    height: auto;
+    display: flex;
+    align-content: space-around;
+    justify-content: center;
+    padding: 1rem;
+  }
+
+  .middle-content .boxes .box {
+    width: 47%;
+    height: 22vh;
+  }
+
+  .middle-content h2 {
+    text-align: center;
+  }
+
+  .grid {
+    width: 100%;
+  }
+
+  .top-content .text-container {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .bottom-content {
+    max-width: 100%;
+    flex-direction: column;
+  }
+
+  .bottom-content .text-container {
+    width: 100%;
+    text-align: center;
+  }
+
+  .grid h2 {
+    text-align: center;
+  }
+
+  .about-top h1 {
+    text-align: center;
+  }
+
+  .about-bottom h2 {
+    text-align: center;
+  }
+}
